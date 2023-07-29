@@ -1,0 +1,36 @@
+version: "3"
+
+services:
+  db:
+    platform: linux/x86_64
+    image: mysql:5.7
+    environment:
+      - MYSQL_ALLOW_EMPTY_PASSWORD=1
+    command: mysqld --character-set-server=utf8 --collation-server=utf8_unicode_ci
+    ports:
+      - 3306:3306
+  api:
+    build: ./backend/
+    command: /bin/sh -c "rm -f tmp/pids/server.pid && bundle exec rails s -p 3000 -b '0.0.0.0'"
+    image: rails.dev
+    volumes:
+      - ./backend:/api
+    environment:
+      TZ: Asia/Tokyo
+      RAILS_ENV: development
+    ports:
+      - 3001:3000
+    depends_on:
+      - db
+    tty: true
+    stdin_open: true
+  front:
+    image: node:19.3.0-alpine3.17
+    volumes:
+      - ./frontend/app:/usr/src/app
+    working_dir: /usr/src/app
+    command: sh -c "yarn && yarn start"
+    ports: 
+      - "4000:3000"
+volumes:
+  mysql-data:
