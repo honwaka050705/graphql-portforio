@@ -1,3 +1,11 @@
-# GraphQL + Rails + React
+# 変換いろいろ([正規版] GraphQL + Rails + React)
+## 概要
+- 各種様々な変換機能をカテゴリごとに集約して公開予定です。
+  - 第一段階として、和暦→西暦の変換機能を開発しています。
+    - 機能は以下のプロトタイプに沿って実装します。
+      - https://github.com/honwaka050705/rails_portfolio
 
+## 作業状況
+- 2023/7/30時点
+  - 環境構築とGraphQLのチュートリアル完了。
 
