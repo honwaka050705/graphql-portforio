@@ -18,4 +18,5 @@
 - 2023/7/31時点
   - 和暦→西暦変換のフォーム作成完了。
   - GraphQLで値を取得し、SelectBoxに元号のセット完了。
+    - [成果物](https://github.com/honwaka050705/graphql-portforio/wiki/%E6%88%90%E6%9E%9C%E7%89%A9)
 
