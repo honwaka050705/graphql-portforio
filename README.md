@@ -5,6 +5,13 @@
     - 機能は以下のプロトタイプに沿って実装します。
       - https://github.com/honwaka050705/rails_portfolio
 
+## 参考
+- 環境構築(GraphQL + Rails + React)
+  - https://qiita.com/sasaki-sota/items/2f65d9bec3753d48bbc0
+  - Reactのみ
+    - https://qiita.com/shun198/items/18014c46901f256af9ee
+- React-Bootstrap
+  - https://react-bootstrap.netlify.app/
 ## 作業状況
 - 2023/7/30時点
   - 環境構築とGraphQLのチュートリアル完了。
