@@ -18,13 +18,18 @@
 - React-Bootstrap
   - https://react-bootstrap.netlify.app/
 ## 作業状況
-- 2023/7/30時点
-  - 環境構築とGraphQLのチュートリアル完了。
-- 2023/7/31時点
+- 2023/08/01時点
+  - 和暦→西暦変換機能の完成
+- 2023/07/31時点
   - 和暦→西暦変換のフォーム作成完了。
   - GraphQLで値を取得し、SelectBoxに元号のセット完了。
-    - [成果物](https://github.com/honwaka050705/graphql-portforio/wiki/%E6%88%90%E6%9E%9C%E7%89%A9)
-  - branch
-    - [backend](https://github.com/honwaka050705/graphql-portforio-backend/tree/step1_to_ad)
-    - [frontend](https://github.com/honwaka050705/graphql-portforio-frontend/tree/step1_to_ad)
+- 2023/07/30時点
+  - 環境構築とGraphQLのチュートリアル完了。
+
+## 成果物
+- branch
+  - [成果物](https://github.com/honwaka050705/graphql-portforio/wiki/%E6%88%90%E6%9E%9C%E7%89%A9)
+  - [backend](https://github.com/honwaka050705/graphql-portforio-backend/tree/step1_to_ad)
+  - [frontend](https://github.com/honwaka050705/graphql-portforio-frontend/tree/step1_to_ad)
+
 
