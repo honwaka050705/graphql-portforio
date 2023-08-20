@@ -7,6 +7,8 @@ services:
     environment:
       - MYSQL_DATABASE=${GRAPH_DB_NAME}
       - MYSQL_ROOT_PASSWORD=${GRAPH_DB_PASS}
+      - MYSQL_USER=${DB_API_USER}
+      - MYSQL_PASSWORD=${DB_API_PASS}
     command: mysqld --character-set-server=utf8 --collation-server=utf8_unicode_ci
     ports:
       - 3306:3306
