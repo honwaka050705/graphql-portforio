@@ -24,7 +24,9 @@ services:
       - ./backend:/api
     environment:
       TZ: Asia/Tokyo
-      RAILS_ENV: development
+      RAILS_ENV: ${RAILS_ENV}
+      DB_API_USER: ${DB_API_USER}
+      DB_API_PASS: ${DB_API_PASS}
     ports:
       - 3001:3000
     depends_on:
